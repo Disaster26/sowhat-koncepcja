@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>so.what - damska marka odzieżowa premium z Warszawy | ubrania na lata</title>
+<meta name="description" content="so.what - damska odzież premium projektowana i szyta w Polsce, z naturalnych tkanin, głównie z Włoch. Sukienki, kombinezony, marynarki, koszule. Showroom: ul. Wilcza 18/12, Warszawa.">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#141414">
+<link rel="icon" type="image/png" sizes="48x48" href="foto/ikona-48.png">
+<link rel="apple-touch-icon" href="foto/ikona-192.png">
+<link rel="preload" href="fonts/urbanist-rdzen.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" type="image/webp" media="(max-width:760px)" imagesrcset="foto/hero-m-480.webp 480w, foto/hero-m-640.webp 640w, foto/hero-m-900.webp 900w" imagesizes="100vw" fetchpriority="high">
+<link rel="preload" as="image" type="image/webp" media="(min-width:761px)" imagesrcset="foto/hero-d-960.webp 960w, foto/hero-d-1280.webp 1280w, foto/hero-d-1600.webp 1600w, foto/hero-d-2000.webp 2000w, foto/hero-d-2240.webp 2240w" imagesizes="100vw" fetchpriority="high">
+<style>
+@font-face{font-family:U;src:url(fonts/urbanist-rdzen.woff2) format("woff2");font-weight:100 900;font-display:swap;unicode-range:U+0020-007E,U+00A0,U+00A9,U+00AB,U+00BB,U+00D3,U+00F3,U+2013,U+2019,U+201D,U+201E,U+2026,U+00B7,U+00D7,U+00B0}
+@font-face{font-family:U;src:url(fonts/urbanist-pl.woff2) format("woff2");font-weight:100 900;font-display:swap;unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+@font-face{font-family:Uf;src:local("Arial"),local("ArialMT"),local("Roboto");size-adjust:97%}
+:root{--ink:#141414;--red:#D5310D;--red-h:#B32708;--mut:#55575C;--line:#E2E4E8;--bg2:#F2F3F5;--dark:#141414;--pad:clamp(16px,4vw,64px);--max:1720px;--hh:61px;--bar:30px}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:var(--hh)}
+body{margin:0;background:#fff;color:var(--ink);font:450 18px/1.6 U,Uf,sans-serif;overflow-x:hidden}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+h1,h2,h3{font-weight:650;line-height:1.05;margin:0;letter-spacing:-.02em}
+h2{font-size:clamp(40px,5vw,84px)}
+h3{font-size:clamp(22px,1.7vw,28px);letter-spacing:-.01em}
+p{margin:0 0 1em}
+.w{width:min(100% - 2*var(--pad),var(--max));margin-inline:auto}
+/* kropka: kwadratowa kropka z logo so.what - "kropka nad i" */
+.k:after{content:"";display:inline-block;width:.17em;height:.17em;background:var(--red);margin-left:.06em;vertical-align:baseline}
+.btn{display:inline-flex;align-items:center;gap:14px;min-height:56px;padding:0 26px;background:var(--red);color:#fff;font:650 19px/1 U,Uf,sans-serif;text-decoration:none;border:0;border-radius:0;cursor:pointer}
+.btn:after{content:"";width:8px;height:8px;background:#fff;flex:none}
+.btn:hover{background:var(--red-h)}
+.skip{position:absolute;left:-999px;top:0;background:#fff;padding:8px;z-index:99}.skip:focus{left:8px}
+/* pasek i naglowek */
+.bar{height:var(--bar);background:var(--dark);color:#E6E6E6;font-size:14px;display:flex;align-items:center;justify-content:center;text-align:center;padding:0 12px}
+.top{position:sticky;top:0;z-index:40;background:#fff;border-bottom:1px solid var(--line);height:var(--hh)}
+.top .w{display:flex;align-items:center;justify-content:space-between;height:60px;gap:16px}
+.logo{display:flex;align-items:center;color:var(--ink);padding:8px 0}
+.logo svg{height:26px;width:auto;display:block}
+.logo .dot,.lg .dot{fill:var(--red)}
+.menu{display:flex;align-items:center;gap:clamp(18px,2.4vw,44px)}
+.menu a{text-decoration:none;font-weight:600;font-size:18px;padding:10px 0;position:relative}
+.menu a:hover{color:var(--red-h)}
+.menu a.on:after{content:"";position:absolute;left:50%;bottom:0;width:7px;height:7px;margin-left:-3.5px;background:var(--red)}
+.burger{display:none}
+@media (max-width:980px){
+ .menu{position:fixed;inset:calc(var(--hh) - 1px) 0 auto 0;background:#fff;flex-direction:column;align-items:stretch;gap:0;padding:4px var(--pad) 26px;border-bottom:1px solid var(--line);box-shadow:0 18px 30px rgba(20,20,20,.12);transform:translateY(-120%);visibility:hidden;transition:transform .25s ease,visibility 0s .25s}
+ .top.open .menu{transform:none;visibility:visible;transition:transform .25s ease}
+ .menu a{padding:16px 0;font-size:24px;border-bottom:1px solid var(--line)}
+ .menu a.on:after{left:auto;right:4px;bottom:auto;top:50%;margin:-4px 0 0}
+ .burger{display:inline-flex;align-items:center;justify-content:center;width:48px;height:48px;border:1px solid var(--line);background:#fff;cursor:pointer;gap:0}
+ .burger i,.burger i:before,.burger i:after{display:block;width:20px;height:2px;background:var(--ink);position:relative;transition:transform .2s}
+ .burger i:before,.burger i:after{content:"";position:absolute;left:0}
+ .burger i:before{top:-6px}.burger i:after{top:6px}
+ .top.open .burger i{background:transparent}.top.open .burger i:before{transform:translateY(6px) rotate(45deg)}.top.open .burger i:after{transform:translateY(-6px) rotate(-45deg)}
+}
+/* hero */
+.hero{position:relative;min-height:calc(100svh - var(--hh) - var(--bar));display:flex;flex-direction:column;justify-content:flex-end;color:#fff;background:#3A3638;overflow:hidden}
+.hero .foto{position:absolute;inset:0}
+.hero .foto img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:30% 40%}
+.hero .foto:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(14,14,14,.55) 0,rgba(14,14,14,0) 34%),linear-gradient(270deg,rgba(14,14,14,.88) 0,rgba(14,14,14,.7) 32%,rgba(14,14,14,.12) 54%,rgba(14,14,14,0) 64%)}
+.hero .in{position:relative;z-index:2;display:flex;justify-content:flex-end;padding:56px 0 clamp(48px,6vw,96px)}
+.hero .tx{width:min(620px,42vw)}
+@media (min-width:1900px){.hero .tx{width:min(860px,36vw)}.hero .lead{max-width:44ch}}
+.hero h1{font-size:clamp(44px,3.9vw,78px);line-height:1.02}
+.hero .lead{margin:24px 0 32px;font-size:clamp(18px,1.2vw,23px);line-height:1.5;color:#EDEDED;max-width:40ch}
+.hero .alt{margin:20px 0 0;font-size:16px;color:#D9D9D9}
+@media (max-width:760px){
+ .hero .foto img{object-position:58% 20%}
+ .hero .foto:after{background:linear-gradient(180deg,rgba(14,14,14,0) 22%,rgba(14,14,14,.55) 46%,rgba(14,14,14,.9) 72%,rgba(14,14,14,.94) 100%)}
+ .hero .in{display:block;padding:120px 0 34px}
+ .hero .tx{width:auto}
+ .hero h1{font-size:clamp(33px,9.4vw,42px)}
+ .hero .lead{margin:14px 0 24px;font-size:16.5px}
+ .hero .btn{width:100%;justify-content:center}
+ .hero .alt{font-size:14.5px;margin-top:14px}
+}
+@media (max-width:760px) and (max-height:700px){.hero h1{font-size:clamp(30px,8.6vw,36px)}.hero .lead{font-size:15.5px;margin:10px 0 24px}.hero .in{padding:90px 0 26px}}
+/* sekcje */
+.sec{padding:clamp(64px,8vw,128px) 0}
+.sec.g{background:var(--bg2)}
+.lead{font-size:clamp(18px,1.4vw,22px);color:var(--mut);max-width:58ch;margin:20px 0 0}
+.head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:20px 40px;margin-bottom:clamp(30px,4vw,56px)}
+.navb{display:flex;gap:8px}
+.navb button{width:52px;height:52px;border:1px solid #B9BDC4;background:#fff;cursor:pointer;color:var(--ink);font-size:22px;line-height:1}
+.navb button:hover{border-color:var(--ink)}
+.tor{display:grid;grid-auto-flow:column;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding-bottom:4px;overscroll-behavior-x:contain}
+.tor::-webkit-scrollbar{display:none}
+.tor>*{scroll-snap-align:start}
+.tor.drag{scroll-snap-type:none;cursor:grabbing}.tor.drag *{pointer-events:none}
+img[data-src]{background:#E6E7EA}
+/* nowosci */
+.tor.prod{grid-auto-columns:min(66vw,300px)}
+@media (min-width:1100px){.tor.prod{grid-auto-columns:calc((100% - 64px)/5)}}
+@media (min-width:1900px){.tor.prod{grid-auto-columns:calc((100% - 96px)/7)}}
+.prod a{display:block;text-decoration:none}
+.prod .ph{overflow:hidden;background:#EEE8E4}
+.prod img{width:100%;aspect-ratio:5/7;object-fit:cover;transition:transform .5s}
+.prod a:hover img{transform:scale(1.03)}
+.prod b{display:block;font-weight:600;font-size:17px;line-height:1.35;margin-top:14px}
+.prod span{display:block;margin-top:4px;font-size:17px;color:var(--mut)}
+.ceny{font-size:14.5px;color:var(--mut);margin:18px 0 0}
+/* kolekcje */
+.kol{display:grid;grid-template-columns:1fr;gap:clamp(36px,4vw,88px);align-items:start}
+@media (min-width:1000px){.kol{grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr)}}
+.kol figure{margin:0}
+.kol figure img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 30%}
+figcaption{font-size:15px;color:var(--mut);margin-top:10px}
+.kat{list-style:none;margin:30px 0 0;padding:0;display:grid;grid-template-columns:1fr;gap:0 48px}
+@media (min-width:700px){.kat{grid-template-columns:1fr 1fr}}
+.kat li{border-top:1px solid #D3D6DB}
+.kat a{display:block;padding:18px 0 18px 26px;text-decoration:none;position:relative}
+.kat a:before{content:"";position:absolute;left:0;top:29px;width:9px;height:9px;background:var(--ink);transition:background .2s}
+.kat a:hover:before{background:var(--red)}
+.kat b{display:block;font-size:22px;font-weight:650;letter-spacing:-.01em}
+.kat span{display:block;color:var(--mut);font-size:16.5px;line-height:1.45;margin-top:2px}
+.tez{margin:28px 0 0;color:var(--mut);font-size:16.5px}
+.tez a{color:var(--ink);font-weight:600;text-decoration:none;border-bottom:2px solid var(--red);margin-right:14px;white-space:nowrap}
+/* zestaw */
+.zes{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:clamp(56px,7vw,110px)}
+.zes .t{grid-column:1/-1;display:flex;flex-direction:column;justify-content:flex-end;padding:0 0 8px}
+@media (min-width:1000px){.zes{grid-template-columns:minmax(0,.9fr) minmax(0,1fr) minmax(0,1fr)}.zes .t{grid-column:auto;padding:0 clamp(16px,2vw,40px) 0 0}}
+.zes button{display:block;width:100%;padding:0;border:0;background:#E6E7EA;cursor:zoom-in;overflow:hidden}
+.zes img{width:100%;aspect-ratio:2/3;object-fit:cover;transition:transform .5s}
+.zes button:hover img{transform:scale(1.03)}
+.zes h3{font-size:clamp(30px,3vw,48px);line-height:1.05;margin-bottom:16px}
+.zes p{color:var(--mut);max-width:42ch}
+.zes p.cn{color:var(--ink);font-weight:600}
+/* filozofia */
+.ciem{background:var(--dark);color:#DADADA}
+.ciem h2{color:#fff}
+.fil{display:grid;grid-template-columns:1fr;gap:clamp(36px,4vw,96px);align-items:center}
+@media (min-width:1000px){.fil{grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr)}}
+.fil figure{margin:0}
+.fil figure img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 25%}
+.fil figcaption{color:#9C9C9C}
+.cyt{font-size:clamp(26px,2.5vw,42px);line-height:1.22;color:#fff;font-weight:550;letter-spacing:-.015em;margin:26px 0 28px;max-width:30ch}
+.fil .op{font-size:clamp(17px,1.25vw,20px);max-width:60ch}
+.fil .op b{color:#fff;font-weight:650}
+.fak{list-style:none;margin:clamp(36px,4vw,56px) 0 0;padding:0;display:grid;grid-template-columns:1fr;gap:0 40px;counter-reset:f}
+@media (min-width:700px){.fak{grid-template-columns:repeat(3,1fr)}}
+.fak li{padding:22px 0 18px;border-top:1px solid #3A3A3A;position:relative;counter-increment:f}
+.fak li:before{content:"0" counter(f);display:block;font-size:15px;color:#9C9C9C;margin-bottom:8px}
+.fak li:after{content:"";position:absolute;left:0;top:-1px;width:28px;height:3px;background:var(--red)}
+.fak b{display:block;color:#fff;font-size:22px;font-weight:650;margin-bottom:6px}
+.fak span{font-size:16px;line-height:1.5;display:block}
+/* pas - kobieta so.what */
+.pas{position:relative;min-height:clamp(440px,46vw,820px);display:flex;align-items:flex-end;color:#fff;overflow:hidden;background:#3B4148}
+.pas img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:40% 50%}
+.pas:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,14,14,0) 35%,rgba(14,14,14,.78) 100%)}
+.pas .w{position:relative;z-index:2;padding-bottom:clamp(36px,5vw,80px)}
+.pas p{font-size:clamp(26px,3vw,50px);line-height:1.15;font-weight:600;letter-spacing:-.02em;max-width:24ch;margin:0}
+/* showroom */
+.sr{display:grid;grid-template-columns:1fr;gap:clamp(36px,4vw,88px);align-items:start}
+@media (min-width:1000px){.sr{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}}
+.sr .op p{color:var(--mut);max-width:60ch}
+.sr .op p.mocno{color:var(--ink);font-size:clamp(19px,1.4vw,22px);font-weight:550}
+.kart{background:var(--bg2);padding:clamp(22px,2.6vw,40px);margin-top:28px;position:relative}
+.kart:before{content:"";position:absolute;left:0;top:0;width:44px;height:4px;background:var(--red)}
+.kart h3{margin-bottom:14px}
+.godz div{display:flex;justify-content:space-between;gap:16px;padding:11px 0;border-bottom:1px solid #D3D6DB}
+.godz div:last-child{border-bottom:0}
+.godz b{font-weight:600}
+.godz span{text-align:right}
+.kon{display:grid;gap:6px;margin-top:22px}
+.kon a.t{font-size:clamp(30px,2.6vw,40px);font-weight:650;text-decoration:none;letter-spacing:-.01em}
+.kon a.t:hover,.kon a.m:hover{color:var(--red-h)}
+.kon a.m{font-size:19px;font-weight:600;text-decoration:none}
+.kon p{margin:6px 0 0}
+.galw{min-width:0}
+.galw .head{margin-bottom:16px}
+.galw .head p{margin:0;color:var(--mut)}
+.tor.sal{grid-auto-columns:min(78vw,420px)}
+@media (min-width:1000px){.tor.sal{grid-auto-columns:calc((100% - 16px)/1.6)}}
+.sal figure{margin:0}
+.sal button{display:block;width:100%;padding:0;border:0;background:#E6E7EA;cursor:zoom-in;overflow:hidden}
+.sal img{width:100%;aspect-ratio:4/5;object-fit:cover;transition:transform .5s}
+.sal button:hover img{transform:scale(1.03)}
+.mapa{margin-top:16px;height:clamp(150px,16vw,260px);background:#E6E7EA;overflow:hidden;position:relative}
+.mapa button{position:absolute;inset:0;width:100%;border:1px solid var(--line);background:#fff;cursor:pointer;color:var(--ink);font:450 16px U,Uf,sans-serif;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;padding:16px}
+.mapa button b{font-size:24px;font-weight:650}
+.mapa button span{font-size:14.5px;color:var(--mut)}
+.mapa iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+/* stopka */
+.stopka{background:var(--dark);color:#C9C9C9;padding:clamp(52px,6vw,88px) 0 28px;font-size:16px}
+.fg{display:grid;grid-template-columns:1.4fr repeat(3,auto);justify-content:space-between;gap:30px 48px}
+.lg svg{height:38px;width:auto;color:#fff;display:block;margin-bottom:18px}
+.stopka b{color:#fff;display:block;margin-bottom:8px;font-size:18px;font-weight:650}
+.stopka a{color:#C9C9C9;text-decoration:none}
+.stopka a:hover{color:#fff}
+.stopka ul{list-style:none;margin:0;padding:0}.stopka li{padding:3px 0}
+.dol{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px 24px;margin-top:40px;padding-top:20px;border-top:1px solid #333;font-size:14px;color:#A8A8A8}
+@media (max-width:860px){.fg{grid-template-columns:1fr 1fr}.fg>div:first-child{grid-column:1/-1}}
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:90;background:rgba(14,14,14,.95);display:none;align-items:center;justify-content:center}
+.lb.on{display:flex}
+.lb figure{margin:0;max-width:94vw;max-height:88vh;display:flex;flex-direction:column;align-items:center}
+.lb img{max-width:94vw;max-height:80vh;width:auto;height:auto;object-fit:contain}
+.lb figcaption{color:#E2E2E2;font-size:15px;margin-top:10px;text-align:center}
+.lb button{position:absolute;background:rgba(255,255,255,.12);border:0;color:#fff;width:52px;height:52px;font-size:26px;cursor:pointer}
+.lb .x{top:14px;right:14px}.lb .p{left:12px;top:50%;margin-top:-26px}.lb .n{right:12px;top:50%;margin-top:-26px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+.wylinka-badge{display:inline-flex;align-items:center;gap:.4em;color:inherit;text-decoration:none;font-size:.875em;line-height:1;opacity:.85}
+.wylinka-badge:hover,.wylinka-badge:focus-visible{opacity:1}
+.wylinka-badge:focus-visible{outline:2px solid currentColor;outline-offset:3px;border-radius:2px}
+.wylinka-badge svg{width:18px;height:18px;flex:none;overflow:visible}
+.wylinka-badge b{font-weight:600}
+.wylinka-badge .wy-old{opacity:.45;transform-origin:40px 30px;transition:transform .32s cubic-bezier(.3,.7,.4,1),opacity .32s ease-out}
+.wylinka-badge .wy-pod{opacity:0;transition:opacity .2s ease-out .08s}
+.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:translate(9px,7px) rotate(9deg);opacity:0}
+.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:1}
+@media (prefers-reduced-motion:reduce){.wylinka-badge .wy-old,.wylinka-badge .wy-pod{transition:none}.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:none;opacity:.45}.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:0}}
+
+</style>
+</head>
+<body>
+<a class="skip" href="#nowosci">Przejdź do treści</a>
+<div class="bar">Bezpłatna wysyłka i zwroty na terenie Polski</div>
+<header class="top" id="top">
+ <div class="w">
+  <a class="logo" href="#start" aria-label="so.what - strona główna"><svg viewBox="0 0 149.9 28.6" role="img" aria-label="so.what" fill="currentColor"><path d="M3.7,21.3c0,1.2,0.6,2.4,1.5,3.2c1.2,0.9,2.7,1.3,4.2,1.2c1.2,0.1,2.4-0.2,3.5-0.8c0.7-0.6,1-1.4,1-2.3 c0-0.7-0.2-1.4-0.7-1.9c-0.7-0.5-1.5-0.9-2.3-0.9l-5-0.8c-1.5-0.2-2.9-0.8-4-1.8c-0.9-1-1.4-2.3-1.4-3.7C0.4,11.7,1.2,10,2.7,9 c1.8-1.2,4-1.8,6.1-1.6c2.2-0.1,4.3,0.5,6.1,1.7c1.5,1.1,2.4,2.8,2.5,4.6h-4c-0.1-1-0.6-1.9-1.4-2.4c-1-0.7-2.2-1-3.4-1 c-1.1-0.1-2.3,0.2-3.3,0.8c-0.7,0.5-1.1,1.2-1.1,2.1c0,0.6,0.2,1.2,0.6,1.6c0.6,0.5,1.4,0.8,2.1,0.9l4.3,0.6c2.3,0.3,4,1,4.9,2.1 c1,1.1,1.5,2.6,1.4,4.1c0.1,1.8-0.7,3.6-2.1,4.7c-1.4,1-3.5,1.6-6.4,1.6c-3.1,0-5.5-0.7-7-2c-1.5-1.3-2.4-3.3-2.3-5.3H3.7z M32.2,28.6c-2,0.1-4-0.4-5.7-1.4c-1.5-0.9-2.7-2.2-3.5-3.8c-0.8-1.7-1.2-3.6-1.2-5.5c0-1.9,0.4-3.7,1.2-5.4c0.8-1.6,2-2.9,3.5-3.8 c1.7-1,3.7-1.5,5.7-1.4c2-0.1,4,0.4,5.7,1.4c1.5,0.9,2.7,2.2,3.5,3.8c0.8,1.7,1.2,3.5,1.2,5.4c0,1.9-0.4,3.7-1.2,5.4 c-0.8,1.6-2,2.9-3.5,3.8C36.2,28.2,34.2,28.7,32.2,28.6z M26,18c0,2.6,0.5,4.5,1.5,5.7c1,1.2,2.6,1.7,4.8,1.7c2.2,0,3.8-0.6,4.8-1.7 c1-1.2,1.5-3.1,1.5-5.7S38,13.5,37,12.3s-2.6-1.7-4.8-1.7c-2.2,0-3.8,0.6-4.8,1.7S26,15.4,26,18z  M59,28 L53,8h4.1L62,25l5.8-17h4l5.8,17l4.9-17h3.9l-6,20h-5.7l-5-15.2l-5,15.2H59z M102.2,7.4c2.6,0,4.4,0.7,5.6,2s1.7,3.4,1.7,6.1V28h-4 V15.9c0-1.9-0.4-3.3-1.2-4.1c-0.9-0.8-2.1-1.2-3.3-1.1c-1.8-0.1-3.5,0.7-4.6,2.1c-1,1.4-1.5,3.7-1.5,6.8V28h-4V0h4v12.5 c0.6-1.5,1.5-2.8,2.7-3.8C99,7.8,100.6,7.3,102.2,7.4z M121.3,28.5c-1.8,0.1-3.5-0.5-4.9-1.6c-1.2-1.1-1.9-2.7-1.8-4.3 c0-1,0.2-2,0.6-2.9c0.4-0.8,1.1-1.6,1.9-2c1.1-0.6,2.3-1,3.5-1.2l5-0.8c0.8-0.1,1.5-0.3,2.1-0.8c0.5-0.4,0.7-1,0.7-1.6 c0.1-0.9-0.3-1.7-1-2.3c-1-0.6-2.2-0.9-3.4-0.8c-1.3-0.1-2.6,0.2-3.7,1c-0.9,0.7-1.4,1.8-1.4,2.9h-4c0-1.3,0.4-2.6,1.1-3.7 c0.7-1.1,1.8-1.9,3-2.4c1.5-0.6,3.2-0.9,4.8-0.8c2.7,0,4.7,0.6,6.1,1.7c1.4,1.1,2.2,2.8,2.1,4.5v9.9c0,1.5,0.1,3,0.2,4.6h-3.6 c-0.2-1.5-0.2-3-0.2-4.5c-0.4,1.4-1.3,2.7-2.5,3.6C124.7,28.1,123,28.6,121.3,28.5z M122.1,25.4c1.2,0,2.4-0.3,3.5-0.9 c1-0.6,1.7-1.5,2.2-2.6c0.5-1.2,0.8-2.4,0.7-3.7v-1.2c-0.5,0.3-1,0.6-1.6,0.8c-0.7,0.2-1.3,0.4-2,0.6l-2.8,0.6 c-1,0.2-1.9,0.6-2.7,1.2c-0.6,0.6-0.9,1.3-0.8,2.1c0,0.8,0.3,1.6,0.9,2.2C120.3,25.2,121.2,25.5,122.1,25.4z M145.6,28 c-1.3,0.1-2.5-0.2-3.7-0.6c-0.8-0.4-1.5-1-1.8-1.9c-0.4-1.1-0.6-2.2-0.5-3.4v-11h-3.8V9l4.2-1.4l1.6-4.1h2V8h6.4v3.1h-6.4v13.7h6V28 H145.6z"/><path class="dot" d="M45.8,28v-3.8h4.8V28H45.8z"/></svg></a>
+  <nav class="menu" id="menu" aria-label="Menu główne">
+   <a href="#nowosci">Nowości</a>
+   <a href="#kolekcje">Kolekcje</a>
+   <a href="#filozofia">Filozofia</a>
+   <a href="#showroom">Showroom</a>
+   <a href="#kontakt">Kontakt</a>
+  </nav>
+  <button class="burger" id="burger" aria-expanded="false" aria-controls="menu" aria-label="Otwórz menu"><i></i></button>
+ </div>
+</header>
+<main>
+<section class="hero" id="start">
+ <div class="foto"><picture><source media="(max-width:760px)" srcset="foto/hero-m-480.webp 480w, foto/hero-m-640.webp 640w, foto/hero-m-900.webp 900w" sizes="100vw"><img src="foto/hero-d-1600.webp" srcset="foto/hero-d-960.webp 960w, foto/hero-d-1280.webp 1280w, foto/hero-d-1600.webp 1600w, foto/hero-d-2000.webp 2000w, foto/hero-d-2240.webp 2240w" sizes="100vw" width="1600" height="771" fetchpriority="high" alt="Uśmiechnięta kobieta w koszuli w paski so.what leży na czerwonej ławce"></picture></div>
+ <div class="w in"><div class="tx">
+  <h1>Damska odzież premium z&nbsp;Warszawy - ubrania na lata, nie na sezon</h1>
+  <p class="lead">Niech Cię nie zmyli nazwa naszej marki: w&nbsp;kwestii jakości jesteśmy bezkompromisowi. Szyjemy w&nbsp;Polsce, z&nbsp;naturalnych tkanin, w&nbsp;większości z&nbsp;Włoch.</p>
+  <a class="btn" href="#nowosci">Zobacz nowości</a>
+  <p class="alt">Showroom: ul. Wilcza 18/12, Warszawa</p>
+ </div></div>
+</section>
+
+<section class="sec" id="nowosci">
+ <div class="w">
+  <div class="head"><div><h2 class="k">nowości</h2>
+  <p class="lead">W so.what zamiast sezonowości stawiamy na trwałość. Tworzymy kobiece ubrania, które sprawdzą się w&nbsp;różnych okolicznościach i&nbsp;posłużą na lata.</p></div>
+  <div class="navb" data-nav="tp"><button type="button" data-k="-1" aria-label="Poprzednie produkty">&#8592;</button><button type="button" data-k="1" aria-label="Następne produkty">&#8594;</button></div></div>
+  <div class="tor prod" id="tp" data-tor><a href="https://sowhat.one/pl/p/ROOFTOP-cotton-summer-yellow-dress/61"><div class="ph"><img data-src="foto/p-rooftop-y-360.webp" data-srcset="foto/p-rooftop-y-357.webp 357w" sizes="(max-width:1099px) 66vw, (min-width:1900px) 14vw, 19vw" width="360" height="504" decoding="async" alt="ROOFTOP cotton summer yellow dress"></div><b>ROOFTOP cotton summer yellow dress</b><span>990,00 zł</span></a><a href="https://sowhat.one/pl/p/HUDSON-bawelniana-koszula-seersucker-w-malinowo-biale-prazki/166"><div class="ph"><img data-src="foto/p-hudson-360.webp" data-srcset="foto/p-hudson-360.webp 360w, foto/p-hudson-428.webp 428w" sizes="(max-width:1099px) 66vw, (min-width:1900px) 14vw, 19vw" width="360" height="504" decoding="async" alt="HUDSON bawełniana koszula seersucker w malinowo-białe prążki"></div><b>HUDSON bawełniana koszula seersucker w malinowo-białe prążki</b><span>790,00 zł</span></a><a href="https://sowhat.one/pl/p/CHUSTA/132"><div class="ph"><img data-src="foto/p-chusta-360.webp" data-srcset="foto/p-chusta-357.webp 357w" sizes="(max-width:1099px) 66vw, (min-width:1900px) 14vw, 19vw" width="360" height="504" decoding="async" alt="CHUSTA"></div><b>CHUSTA</b><span>290,00 zł</span></a><a href="https://sowhat.one/pl/p/ROOFTOP-BLACK-bawelniana-sukienka-midi-z-dekoltem-na-plecach/109"><div class="ph"><img data-src="foto/p-rooftop-b-360.webp" data-srcset="foto/p-rooftop-b-357.webp 357w" sizes="(max-width:1099px) 66vw, (min-width:1900px) 14vw, 19vw" width="360" height="504" decoding="async" alt="ROOFTOP BLACK bawełniana sukienka midi z dekoltem na plecach"></div><b>ROOFTOP BLACK bawełniana sukienka midi z dekoltem na plecach</b><span>790,00 zł</span></a><a href="https://sowhat.one/pl/p/PARKER-szorty-bawelniane-seersucker-w-malinowo-biale-paski/165"><div class="ph"><img data-src="foto/p-parker-360.webp" data-srcset="foto/p-parker-360.webp 360w, foto/p-parker-428.webp 428w" sizes="(max-width:1099px) 66vw, (min-width:1900px) 14vw, 19vw" width="360" height="504" decoding="async" alt="PARKER szorty bawełniane seersucker w malinowo-białe paski"></div><b>PARKER szorty bawełniane seersucker w malinowo-białe paski</b><span>590,00 zł</span></a><a href="https://sowhat.one/pl/p/SAND-PLAYSUIT-mietowy-kombinezon-z-bawelnianego-muslinu/135"><div class="ph"><img data-src="foto/p-sand-360.webp" data-srcset="foto/p-sand-357.webp 357w" sizes="(max-width:1099px) 66vw, (min-width:1900px) 14vw, 19vw" width="360" height="504" decoding="async" alt="SAND PLAYSUIT miętowy kombinezon z bawełnianego muślinu"></div><b>SAND PLAYSUIT miętowy kombinezon z bawełnianego muślinu</b><span>490,00 zł</span></a><a href="https://sowhat.one/pl/p/ANNA-sukienka-kopertowa-midi-z-wiskozy-zebra/129"><div class="ph"><img data-src="foto/p-anna-360.webp" data-srcset="foto/p-anna-360.webp 360w, foto/p-anna-500.webp 500w" sizes="(max-width:1099px) 66vw, (min-width:1900px) 14vw, 19vw" width="360" height="504" decoding="async" alt="ANNA sukienka kopertowa z wiskozy"></div><b>ANNA sukienka kopertowa z wiskozy</b><span>750,00 zł</span></a></div>
+  <p class="ceny">Ceny ze sklepu so.what, stan na 17.11.2026.</p>
+ </div>
+</section>
+
+<section class="sec g" id="kolekcje">
+ <div class="w">
+  <div class="kol">
+   <figure><img data-src="foto/sukienki-720.webp" data-srcset="foto/sukienki-480.webp 480w, foto/sukienki-720.webp 720w, foto/sukienki-960.webp 960w" sizes="(max-width:999px) 92vw, 38vw" width="720" height="900" decoding="async" alt="Kobieta w sukience so.what w kolorowy wzór na kamiennych schodach"><figcaption>Sukienki so.what: kobiecość w&nbsp;maksymalnie komfortowym wydaniu</figcaption></figure>
+   <div>
+    <h2 class="k">kolekcje</h2>
+    <p class="lead">Od marynarek i&nbsp;kamizelek, które bazują na ponadczasowej klasyce, po sukienki, które odważnie podkreślają indywidualność.</p>
+    <ul class="kat">
+     <li><a href="https://sowhat.one/sukienki"><b>Sukienki</b><span>Kwintesencja kobiecości w&nbsp;maksymalnie komfortowym wydaniu.</span></a></li>
+     <li><a href="https://sowhat.one/zakiety-kamizelki"><b>Marynarki i kamizelki</b><span>Połączenie funkcjonalności i&nbsp;stylu, must have każdej szykownej kobiety.</span></a></li>
+     <li><a href="https://sowhat.one/koszule"><b>Koszule i bluzki</b><span>Baza do codziennych stylizacji.</span></a></li>
+     <li><a href="https://sowhat.one/kombinezony"><b>Kombinezony</b><span>Alternatywa dla sukienki bez utraty grama kobiecości.</span></a></li>
+     <li><a href="https://sowhat.one/spodnie"><b>Spodnie</b><span>Projekty do noszenia na co dzień przez wiele sezonów.</span></a></li>
+     <li><a href="https://sowhat.one/spodnice"><b>Spódnice</b><span>Obowiązkowy element garderoby stylowej kobiety.</span></a></li>
+     <li><a href="https://sowhat.one/plaszcze-kurtki"><b>Płaszcze i kurtki</b><span>Nasza stylowa odpowiedź na niskie temperatury.</span></a></li>
+     <li><a href="https://sowhat.one/akcesoria"><b>Akcesoria</b><span>Czapki i&nbsp;chusty, dzięki którym postawisz kropkę nad i&nbsp;w&nbsp;każdym outficie.</span></a></li>
+    </ul>
+    <p class="tez">Także: <a href="https://sowhat.one/pl/c/URBAN-ESCAPE-kapsula/44">Urban Escape</a> <a href="https://sowhat.one/basic">Basic</a> <a href="https://sowhat.one/swetry">Swetry</a> <a href="https://sowhat.one/pl/c/FROM-THE-ARCHIVE/38">From the archive</a></p>
+   </div>
+  </div>
+  <div class="zes">
+   <div class="t"><h3 class="k">Zestaw do zadań specjalnych</h3><p>Koszula HUDSON i&nbsp;szorty PARKER z&nbsp;bawełny seersucker w&nbsp;malinowo-białe paski. Osobno albo razem, do miasta i&nbsp;na wakacje.</p><p class="cn">Koszula 790 zł · szorty 590 zł</p></div>
+   <button type="button" data-lb="zes" data-src="foto/hudson2-800.webp" data-cap="Koszula HUDSON i szorty PARKER"><img data-src="foto/hudson2-800.webp" data-srcset="foto/hudson2-480.webp 480w, foto/hudson2-800.webp 800w" sizes="(max-width:999px) 46vw, 30vw" width="800" height="1200" decoding="async" alt="Modelka w koszuli HUDSON i szortach PARKER siedzi na murku"></button>
+   <button type="button" data-lb="zes" data-src="foto/hudson-800.webp" data-cap="Koszula HUDSON z bawełny seersucker"><img data-src="foto/hudson-800.webp" data-srcset="foto/hudson-480.webp 480w, foto/hudson-800.webp 800w" sizes="(max-width:999px) 46vw, 30vw" width="800" height="1200" decoding="async" alt="Modelka w okularach przeciwsłonecznych w koszuli HUDSON w malinowo-białe paski"></button>
+  </div>
+ </div>
+</section>
+
+<section class="sec ciem" id="filozofia">
+ <div class="w">
+  <div class="fil">
+   <figure><img data-src="foto/filozofia-900.webp" data-srcset="foto/filozofia-600.webp 600w, foto/filozofia-900.webp 900w, foto/filozofia-1200.webp 1200w, foto/filozofia-1500.webp 1500w" sizes="(max-width:999px) 92vw, 36vw" width="900" height="1125" decoding="async" alt="Kobieta tyłem w kombinezonie so.what z odkrytymi plecami, wieczorem na tarasie"><figcaption>Kombinezon z&nbsp;odkrytymi plecami, so.what</figcaption></figure>
+   <div>
+    <h2 class="k">filozofia</h2>
+    <p class="cyt">W so.what nie chodzi o&nbsp;to, aby było Ci wszystko jedno, ale o&nbsp;to, byś potrafiła akceptować siebie taką, jaka jesteś.</p>
+    <div class="op">
+     <p>Historia marki to historia o&nbsp;marzeniach, które dojrzewały bardzo długo, aż stały się punktem zapalnym, by postawić wszystko na jedną kartę i&nbsp;zamienić pasję w&nbsp;pomysł na życie. <b>A&nbsp;jeśli się nie uda, to… so what?!</b></p>
+     <p>Nasze ubrania inspirowane są podróżami, ludźmi i&nbsp;doświadczeniami. Świetnie sprawdzą się rano na spotkaniu służbowym, a&nbsp;po południu, założone do trampek, w&nbsp;zdobywaniu miejskiej dżungli.</p>
+    </div>
+    <ul class="fak">
+     <li><b>Szyte w Polsce</b><span>Kolekcje tworzy u&nbsp;nas zespół drobiazgowo dobranych profesjonalistów.</span></li>
+     <li><b>Tkaniny z Włoch</b><span>Najlepsze, naturalne materiały, także od wybranych polskich producentów.</span></li>
+     <li><b>Na lata</b><span>Niesztampowe, dobrze skrojone ubrania, które zostaną z&nbsp;Tobą na długo.</span></li>
+    </ul>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="pas" aria-label="Kobieta so.what">
+ <img data-src="foto/kapelusz-1600.webp" data-srcset="foto/kapelusz-800.webp 800w, foto/kapelusz-1200.webp 1200w, foto/kapelusz-1600.webp 1600w" sizes="100vw" width="1600" height="900" decoding="async" alt="Stylizacja so.what: biała koszula, błękitna kamizelka i kapelusz">
+ <div class="w"><p class="k">Kobieta so.what nade wszystko kocha życie. Jest żądna przygód, dlatego nie boi się wyjść czasem poza strefę komfortu</p></div>
+</section>
+
+<section class="sec" id="showroom">
+ <div class="w">
+  <div class="sr">
+   <div class="op">
+    <h2 class="k">showroom</h2>
+    <p class="lead">Nic tak nie sprzyja inspiracji, jak bezpośrednia rozmowa z&nbsp;drugim człowiekiem.</p>
+    <p class="mocno" style="margin-top:22px">Umów się z&nbsp;nami, wypij dobrą kawę, przymierz ubrania i&nbsp;poczuj je wszystkimi zmysłami. Mają nawet swój zapach!</p>
+    <p>Zależy nam, żebyście wpadając do nas czuły się jak na spotkaniu z&nbsp;najlepszymi przyjaciółkami: zawsze służymy radą i&nbsp;nienachalną pomocą. Tutaj wszystko ma swoją historię. W&nbsp;showroomie zobaczysz fragment oryginalnej podłogi z&nbsp;1830 roku.</p>
+    <div class="kart" id="kontakt">
+     <h3>ul. Wilcza 18/12, 00-532 Warszawa</h3>
+     <div class="godz">
+      <div><b>Czwartek</b><span>11:00 - 19:00</span></div>
+      <div><b>Pozostałe dni</b><span>na umówione spotkania</span></div>
+     </div>
+     <div class="kon">
+      <a class="t" href="tel:+48606323300">606 323 300</a>
+      <a class="m" href="mailto:office@sowhat.one">office@sowhat.one</a>
+      <p>Przed wizytą prosimy o&nbsp;telefon lub wiadomość.</p>
+     </div>
+    </div>
+   </div>
+   <div class="galw">
+    <div class="head"><p>Showroom so.what przy Wilczej. Kliknij zdjęcie, żeby je powiększyć.</p>
+    <div class="navb" data-nav="ts"><button type="button" data-k="-1" aria-label="Poprzednie zdjęcie">&#8592;</button><button type="button" data-k="1" aria-label="Następne zdjęcie">&#8594;</button></div></div>
+    <div class="tor sal" id="ts" data-tor><figure><button type="button" data-lb="sal" data-src="foto/sr-sala-1600.webp" data-cap="Sala showroomu so.what przy ul. Wilczej"><img data-src="foto/sr-sala-1200.webp" data-srcset="foto/sr-sala-800.webp 800w, foto/sr-sala-1200.webp 1200w, foto/sr-sala-1600.webp 1600w" sizes="(max-width:999px) 78vw, 30vw" width="1200" height="675" decoding="async" alt="Sala showroomu so.what przy ul. Wilczej"></button></figure><figure><button type="button" data-lb="sal" data-src="foto/sr-1-900.webp" data-cap="Przymierzalnia z lustrem"><img data-src="foto/sr-1-720.webp" data-srcset="foto/sr-1-480.webp 480w, foto/sr-1-720.webp 720w, foto/sr-1-900.webp 900w" sizes="(max-width:999px) 78vw, 30vw" width="720" height="1008" decoding="async" alt="Przymierzalnia z lustrem"></button></figure><figure><button type="button" data-lb="sal" data-src="foto/sr-2-900.webp" data-cap="Świetlik z fragmentem oryginalnej podłogi z 1830 roku"><img data-src="foto/sr-2-720.webp" data-srcset="foto/sr-2-480.webp 480w, foto/sr-2-720.webp 720w, foto/sr-2-900.webp 900w" sizes="(max-width:999px) 78vw, 30vw" width="720" height="1008" decoding="async" alt="Świetlik z fragmentem oryginalnej podłogi z 1830 roku"></button></figure><figure><button type="button" data-lb="sal" data-src="foto/sr-3-900.webp" data-cap="Kompozycje kwiatowe na manekinach"><img data-src="foto/sr-3-720.webp" data-srcset="foto/sr-3-480.webp 480w, foto/sr-3-720.webp 720w, foto/sr-3-900.webp 900w" sizes="(max-width:999px) 78vw, 30vw" width="720" height="1008" decoding="async" alt="Kompozycje kwiatowe na manekinach"></button></figure></div>
+    <div class="mapa" id="mapa" data-src="https://www.google.com/maps?q=Wilcza+18,+00-532+Warszawa&amp;output=embed"><button type="button" id="pokaz-mape"><b>Pokaż mapę dojazdu</b>ul. Wilcza 18/12, Warszawa<span>Kliknięcie wczyta mapę Google</span></button></div>
+   </div>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer class="stopka">
+ <div class="w">
+  <div class="fg">
+   <div class="lg"><svg viewBox="0 0 149.9 28.6" role="img" aria-label="so.what" fill="currentColor"><path d="M3.7,21.3c0,1.2,0.6,2.4,1.5,3.2c1.2,0.9,2.7,1.3,4.2,1.2c1.2,0.1,2.4-0.2,3.5-0.8c0.7-0.6,1-1.4,1-2.3 c0-0.7-0.2-1.4-0.7-1.9c-0.7-0.5-1.5-0.9-2.3-0.9l-5-0.8c-1.5-0.2-2.9-0.8-4-1.8c-0.9-1-1.4-2.3-1.4-3.7C0.4,11.7,1.2,10,2.7,9 c1.8-1.2,4-1.8,6.1-1.6c2.2-0.1,4.3,0.5,6.1,1.7c1.5,1.1,2.4,2.8,2.5,4.6h-4c-0.1-1-0.6-1.9-1.4-2.4c-1-0.7-2.2-1-3.4-1 c-1.1-0.1-2.3,0.2-3.3,0.8c-0.7,0.5-1.1,1.2-1.1,2.1c0,0.6,0.2,1.2,0.6,1.6c0.6,0.5,1.4,0.8,2.1,0.9l4.3,0.6c2.3,0.3,4,1,4.9,2.1 c1,1.1,1.5,2.6,1.4,4.1c0.1,1.8-0.7,3.6-2.1,4.7c-1.4,1-3.5,1.6-6.4,1.6c-3.1,0-5.5-0.7-7-2c-1.5-1.3-2.4-3.3-2.3-5.3H3.7z M32.2,28.6c-2,0.1-4-0.4-5.7-1.4c-1.5-0.9-2.7-2.2-3.5-3.8c-0.8-1.7-1.2-3.6-1.2-5.5c0-1.9,0.4-3.7,1.2-5.4c0.8-1.6,2-2.9,3.5-3.8 c1.7-1,3.7-1.5,5.7-1.4c2-0.1,4,0.4,5.7,1.4c1.5,0.9,2.7,2.2,3.5,3.8c0.8,1.7,1.2,3.5,1.2,5.4c0,1.9-0.4,3.7-1.2,5.4 c-0.8,1.6-2,2.9-3.5,3.8C36.2,28.2,34.2,28.7,32.2,28.6z M26,18c0,2.6,0.5,4.5,1.5,5.7c1,1.2,2.6,1.7,4.8,1.7c2.2,0,3.8-0.6,4.8-1.7 c1-1.2,1.5-3.1,1.5-5.7S38,13.5,37,12.3s-2.6-1.7-4.8-1.7c-2.2,0-3.8,0.6-4.8,1.7S26,15.4,26,18z  M59,28 L53,8h4.1L62,25l5.8-17h4l5.8,17l4.9-17h3.9l-6,20h-5.7l-5-15.2l-5,15.2H59z M102.2,7.4c2.6,0,4.4,0.7,5.6,2s1.7,3.4,1.7,6.1V28h-4 V15.9c0-1.9-0.4-3.3-1.2-4.1c-0.9-0.8-2.1-1.2-3.3-1.1c-1.8-0.1-3.5,0.7-4.6,2.1c-1,1.4-1.5,3.7-1.5,6.8V28h-4V0h4v12.5 c0.6-1.5,1.5-2.8,2.7-3.8C99,7.8,100.6,7.3,102.2,7.4z M121.3,28.5c-1.8,0.1-3.5-0.5-4.9-1.6c-1.2-1.1-1.9-2.7-1.8-4.3 c0-1,0.2-2,0.6-2.9c0.4-0.8,1.1-1.6,1.9-2c1.1-0.6,2.3-1,3.5-1.2l5-0.8c0.8-0.1,1.5-0.3,2.1-0.8c0.5-0.4,0.7-1,0.7-1.6 c0.1-0.9-0.3-1.7-1-2.3c-1-0.6-2.2-0.9-3.4-0.8c-1.3-0.1-2.6,0.2-3.7,1c-0.9,0.7-1.4,1.8-1.4,2.9h-4c0-1.3,0.4-2.6,1.1-3.7 c0.7-1.1,1.8-1.9,3-2.4c1.5-0.6,3.2-0.9,4.8-0.8c2.7,0,4.7,0.6,6.1,1.7c1.4,1.1,2.2,2.8,2.1,4.5v9.9c0,1.5,0.1,3,0.2,4.6h-3.6 c-0.2-1.5-0.2-3-0.2-4.5c-0.4,1.4-1.3,2.7-2.5,3.6C124.7,28.1,123,28.6,121.3,28.5z M122.1,25.4c1.2,0,2.4-0.3,3.5-0.9 c1-0.6,1.7-1.5,2.2-2.6c0.5-1.2,0.8-2.4,0.7-3.7v-1.2c-0.5,0.3-1,0.6-1.6,0.8c-0.7,0.2-1.3,0.4-2,0.6l-2.8,0.6 c-1,0.2-1.9,0.6-2.7,1.2c-0.6,0.6-0.9,1.3-0.8,2.1c0,0.8,0.3,1.6,0.9,2.2C120.3,25.2,121.2,25.5,122.1,25.4z M145.6,28 c-1.3,0.1-2.5-0.2-3.7-0.6c-0.8-0.4-1.5-1-1.8-1.9c-0.4-1.1-0.6-2.2-0.5-3.4v-11h-3.8V9l4.2-1.4l1.6-4.1h2V8h6.4v3.1h-6.4v13.7h6V28 H145.6z"/><path class="dot" d="M45.8,28v-3.8h4.8V28H45.8z"/></svg>Damska marka odzieżowa premium.<br>Showroom: ul. Wilcza 18/12, 00-532 Warszawa</div>
+   <div><b>Sklep</b><ul><li><a href="https://sowhat.one/pl/c/NOWOSCI/46">Nowości</a></li><li><a href="https://sowhat.one/sukienki">Sukienki</a></li><li><a href="https://sowhat.one/kombinezony">Kombinezony</a></li><li><a href="https://sowhat.one/akcesoria">Akcesoria</a></li><li><a href="https://sowhat.one/tabela-rozmiarow">Tabela rozmiarów</a></li></ul></div>
+   <div><b>Zakupy</b><ul><li><a href="https://sowhat.one/zwroty-i-reklamacje">Wysyłki i zwroty</a></li><li><a href="https://sowhat.one/pl/i/METODY-PLATNOSCI/20">Metody płatności</a></li><li><a href="https://sowhat.one/faq">FAQ</a></li><li><a href="https://sowhat.one/regulamin">Regulamin</a></li><li><a href="https://sowhat.one/polityka-prywatnosci">Polityka prywatności</a></li></ul></div>
+   <div><b>Kontakt</b><ul><li><a href="tel:+48606323300">606 323 300</a></li><li><a href="mailto:office@sowhat.one">office@sowhat.one</a></li><li><a href="https://www.instagram.com/sowhat.one/" rel="noopener">Instagram</a></li><li><a href="https://www.facebook.com/sowhat.officialprofile" rel="noopener">Facebook</a></li></ul></div>
+  </div>
+  <div class="dol"><span>© <span id="rok">2026</span> so.what · Maono Investments · NIP 9511679575</span><a class="wylinka-badge" href="https://wylinka.pl/?utm_source=sowhat.one&amp;utm_medium=stopka&amp;utm_campaign=wykonanie" rel="noopener" title="Strona wykonana przez Wylinka"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="currentColor"><path d="M9.8 22.8l-1.2-7.9 2.2-3.7 15.5 4.6-.5 1.5-7.2 5.5 4.7 15.6 5-15.6 7 0 4.1 12.7-4.2-.9-2.6 1.8-.8-2.2-5.3 15.6-4.3 0 .4 .2-2.1 2.8-1.3-1.1 1.1-1.4-3.1 .2-.1-1.7 2.2-.1-5.7-16.5-4.8 .6-.8 3.1 0 .5-.3 .5 .8 2.2-1.6 .5-.4-1.3-.8 1.6-1.5-.8 .8-1.6-1.4 .6-.6-1.6 2.3-.8 .2-.4 1.3-4.8 5.9-.8-2.4-6.9zM15.2 13.7l-.1-.4-.4 .8-.1 .8 .1 1 .1 .4 .3 .7 .3-.9 .1-.7 0-.8z"/><path class="wy-pod" d="M37.1 49.8l-4.5-13.3 2.6-1.8 4.2 .9 .9 2.8 3-9.7 0-.5 .1-.8 3.2-8.4 .5-1 .6-1 .9-1.1 1.3-1 1.1-.7 1.4-.5 1.4-.3 .7 0 .9 0 1.2 .3 1.4 .6 .8 .5 .7 .7 .6 .7 .5 .9 .3 .9 .1 .9 0 .8-.2 .9-.5 .9-.5 .6-.7 .5-.7 .3-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.6-.1-.6-.3-.7-.4-.5-.4-.4-.5-.3-.6-.3-.7 0-.7 .1-.6 .1-.5 .4-.5 .5-.3 .5-.2 .7-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1-2.1-2.8 .4-.2z"/><path class="wy-old" d="M40.8 50l.4-.2-4.1 0-4.2-12.5 2.5-1.7 4.3 .9 .6 1.9 .6-1.6 0-.3 2.4-7.8 0-.5 .1-.8 3.2-8.4 .4-.8 .6-.9 .9-1.2 .9-.9 1.3-.8 1.4-.6 1.2-.3 1.4-.1 1.3 .1 .6 .2 .8 .3 1.1 .6 .9 .7 .7 .9 .5 .9 .3 .9 .1 1.1-.1 .9-.3 .9-.4 .7-.6 .7-.6 .4-.6 .2-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.5-.1-.6-.2-.6-.3-.5-.4-.5-.5-.3-.6-.3-.7-.1-.6 0-.6 .1-.6 .3-.6 .5-.3 .4-.2 .5-.1 .5-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1zM49.6 17.1l.6 1.7-1.5 1.9 .4 .4 1.8-2.1-.7-2.1zM48.1 28.3l.5 1.8-1.7 1.8 .4 .4 1.9-2-.6-2.2zM37.9 41.7l1.7-1.5-.4-.4-1.7 1.4zM42.6 38.7l-1.5 2.8 1.1 2-1.3 2.6 .5 .2 1.5-2.8-1.1-2 1.4-2.5z"/></svg><span>wykonanie: <b>Wylinka</b></span></a></div>
+ </div>
+</footer>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Powiększone zdjęcie"><figure><img alt=""><figcaption></figcaption></figure><button class="x" type="button" aria-label="Zamknij">&#215;</button><button class="p" type="button" aria-label="Poprzednie">&#8592;</button><button class="n" type="button" aria-label="Następne">&#8594;</button></div>
+<script src="app.js" defer></script>
+</body>
+</html>
